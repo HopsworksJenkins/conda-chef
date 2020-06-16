@@ -9,6 +9,9 @@ default["install"]["cloud"]                       = ""
 
 default["install"]["aws"]["instance_role"]        = "false"
 
+default["install"]["aws"]["docker"]["ecr-login_dir"]  = "/root/.docker-ecr-login/"
+
+default['install']['managed_docker_registry']         = "false"
 
 # Set the root installation directory for Hopsworks to /srv/hops
 default["install"]["dir"]                         = "/srv/hops"
